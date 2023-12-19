@@ -40,17 +40,17 @@
 
   > Open the downloaded file `cuda_11.8.0_522.06_windows.exe` and follow the installation instructions.
 
-  ![Alt text](image\image.png)
+  ![Alt text](image/image.png)
 
   > In the options select `express installation`
 
-  ![Alt text](image\image-3.png)
+  ![Alt text](image/image-3.png)
 
 - ### `CUDNN`
 
   > Unzip the archive `cudnn-windows-x86_64-8.9.7.29_cuda11-archive.zip` and move with replace all files in the `lib`, `include` and `bin` folders on `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8` with files from the corresponding archive folders:
 
-  ![Alt text](image\image-6.png)
+  ![Alt text](image/image-6.png)
 
   > Add the following lines to your system and user `$Path` variable:
 
@@ -62,13 +62,13 @@
       C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64
   ```
 
-  ![Alt text](image\image-7.png)
+  ![Alt text](image/image-7.png)
 
 - ### `NVIDIA Nsight Developer Tools`
 
   > Install all the NVIDIA Nsight developer tools that we downloaded earlier
 
-  ![Alt text](image\image-8.png)
+  ![Alt text](image/image-8.png)
 
 ## Verifying installation success
 
@@ -78,13 +78,13 @@
   nvcc --version # Shows CUDA version
   ```
 
-  ![Alt text](image\image-10.png)
+  ![Alt text](image/image-10.png)
 
   ```sh
   nvidia-smi # Shows the NVIDIA system management interface
   ```
 
-  ![Alt text](image\image-11.png)
+  ![Alt text](image/image-11.png)
 
   > **Caution**: TensorFlow **2.10** was the **last** TensorFlow release that supported **GPU** on **native-Windows**.
   > Starting with TensorFlow 2.11, you will need to install **[TensorFlow in WSL2](https://tensorflow.org/install/pip?_gl=1*1hhlps0*_ga*Njg0NTU3NTE4LjE3MDI5MTIzNjQ.*_ga_W0YLR4190T*MTcwMjkzODg1NC41LjEuMTcwMjkzOTQyNi4wLjAuMA..#windows-wsl2)**, or install tensorflow or tensorflow-cpu and, optionally, try the **[TensorFlow-DirectML-Plugin](https://github.com/microsoft/tensorflow-directml-plugin#tensorflow-directml-plugin-)**`
@@ -100,14 +100,14 @@
 
   ```
 
-  ![Alt text](image\image-14.png)
+  ![Alt text](image/image-14.png)
 
   ```python
   # If a tensor is returned, you've installed TensorFlow successfully.
   python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
   ```
 
-  ![Alt text](image\image-13.png)
+  ![Alt text](image/image-13.png)
 
   | 🎉 Thank you for your attention! 🎉 |
   | :---------------------------------: |
